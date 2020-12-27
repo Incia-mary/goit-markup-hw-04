@@ -378,44 +378,57 @@ ul {
 
 .networks {
   display: flex;
-  width: 206px;
   padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-bottom: 30px;
+  justify-content: center;
 }
 .hero-network {
   display: flex;
-}
-.hero-icon-network {
   width: 44px;
   height: 44px;
+  fill: #ffffff;
 }
+/*.hero-icon-network {
+  fill: var(--primary-text-color);
+}*/
+.hero-network:hover {
+  fill: var(--accent-color);
+}
+
+/*.hero-icon-network:hover {
+  fill: #ffffff;
+}*/
 
 /*блок клиенты*/
 .client-main {
   display: flex;
 }
+.client-list {
+  display: flex;
+  width: 170px;
+  height: 90px;
+}
+
+.client-list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .button-client {
   display: flex;
-  padding: 0;
-  border: none;
-}
 
-.icon-client {
   padding-top: 20px;
   padding-bottom: 20px;
-
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 4px;
 }
 
-/*.icon-client:not(:first-child) {
-  margin-right: 30px;
-}*/
-
+.icon-client {
+  fill: var(--primary-text-color);
+}
+.icon-client:hover {
+  fill: var(--accent-color);
+}
 /*подвал сайта*/
 
 .footer {
@@ -457,6 +470,28 @@ ul {
 }
 .mail {
   margin-bottom: 6px;
+}
+.footer-networks {
+  display: flex;
+}
+.footer-link {
+  width: 145px;
+  height: 16px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-network {
+  display: flex;
+  width: 44px;
+  height: 44px;
 }
 /*скрытый заголовок*/
 .hide {
@@ -542,4 +577,9 @@ ul {
 
 .project-items:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.project-items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
