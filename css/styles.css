@@ -386,27 +386,22 @@ ul {
   height: 44px;
 
   border-radius: 50%;
-
+  color: #afb1b8;
   background-color: #ffffff;
 }
 
-/*.hero-network:hover,
-.hero-network:focus {
-  color: var(--accent-color);
-}*/
+.hero-network:not(:last-child) {
+  margin-right: 10px;
+}
 
 .hero-icon-network {
   height: 20px;
-  fill: #afb1b8;
-}
-
-.hero-icon-network:hover,
-.hero-icon-network:focus {
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 .hero-network:hover,
 .hero-network:focus {
+  color: #ffffff;
   background-color: var(--accent-color);
 }
 
@@ -435,6 +430,7 @@ ul {
   line-height: 0px;
   /*padding-top: 20px;
   padding-bottom: 20px;*/
+  color: #afb1b8;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 4px;
@@ -442,6 +438,7 @@ ul {
 
 .button-client:hover,
 .button-client:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
@@ -450,11 +447,7 @@ ul {
 }
 
 .icon-client {
-  fill: #afb1b8;
-}
-.icon-client:hover,
-.icon-client:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /*подвал сайта*/
@@ -612,7 +605,7 @@ ul {
 
   letter-spacing: 0.06em;
 
-  color: var(--text-title-color);
+  color: #212121;
 }
 .project-description {
   margin-top: 0;
@@ -654,4 +647,8 @@ ul {
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-image {
+  width: 100%;
 }
