@@ -142,12 +142,12 @@ ul {
 .icon-mail {
   margin-right: 10px;
   background-repeat: no-repeat;
-  fill: currentColor;
+  fill: currentcolor;
 }
 .icon-tel {
   margin-right: 10px;
 
-  fill: currentColor;
+  fill: currentcolor;
 }
 
 /*главный баннер сайта*/
@@ -450,7 +450,7 @@ ul {
 }
 
 .icon-client {
-  fill: var(--primary-text-color);
+  fill: #afb1b8;
 }
 .icon-client:hover,
 .icon-client:focus {
@@ -568,36 +568,32 @@ ul {
   justify-content: center;
 }
 
+.buttons {
+  margin-bottom: 50px;
+}
 .filter {
+  display: inline-block;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 
-  display: inline;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
 
-  /*color: var(--text-title-color);*/
   cursor: pointer;
-  padding: 0px;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-bottom: 50px;
 }
 
 .filter:hover,
 .filter:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-/*.button-filter {
-  display: block;
-  
-}*/
 
 .button-item:not(:last-child) {
   margin-right: 8px;
